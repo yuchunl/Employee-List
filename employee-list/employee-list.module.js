@@ -1,2 +1,2 @@
-// Define the 'employeeApp' module
+// Define the 'employeeList' module
 angular.module('employeeList', []);

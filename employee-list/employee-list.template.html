@@ -1,6 +1,6 @@
 <ul>
     <li ng-repeat="employee in $ctrl.employees" >
         <p ng-click="$ctrl.toggleEmployee(employee)" ng-class="{active: $ctrl.isEmployeeShown(employee)}">{{employee.name}}</p>
-        <p ng-show="$ctrl.isEmployeeShown(employee)">{{employee.bio}}</p>
+        <p ng-show="$ctrl.isEmployeeShown(employee)" ng-click="$ctrl.showAlert(employee.others)">{{employee.bio}}</p>
     </li>
 </ul>

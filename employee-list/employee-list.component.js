@@ -1,7 +1,7 @@
 // Register 'employeeList' component, along with its associated controller and template
 angular.module('employeeList').component('employeeList', {
     templateUrl: 'employee-list/employee-list.template.html',
-    controller: function employeeListController() {
+    controller: ['system', function(system) {
 
         var self = this;
 
@@ -39,5 +39,10 @@ angular.module('employeeList').component('employeeList', {
             return this.currEmployee === employee;
         };
 
-    }
+        // Open the alert after clicking employee's bio
+        self.showAlert = function(message) {
+            system.alert(message);
+        };
+
+    }]
 });

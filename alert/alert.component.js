@@ -2,7 +2,5 @@
 angular.module('alert').component('alert', {
     templateUrl: 'alert/alert.template.html',
     controller: function alertController() {
-
-
     }
 });
